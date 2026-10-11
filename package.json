@@ -1,0 +1,1 @@
+{"name":"chaos-engine","private":true,"type":"module","scripts":{"dev":"vite","serve":"python3 -m http.server 8000"},"dependencies":{"three":"^0.160.0"},"devDependencies":{"vite":"^5.0.0"}}

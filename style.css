@@ -1,0 +1,18 @@
+*{box-sizing:border-box}
+body{margin:0;background:#050507;color:#cfd5e4;font-family:"Bahnschrift","Arial Narrow","Segoe UI",sans-serif;display:flex;justify-content:center;min-height:100vh}
+main{display:flex;flex-direction:column;align-items:center;gap:8px;padding:6px}
+.stage{position:relative;width:min(calc(100vw - 12px),calc((100vh - 130px)*1.7778));aspect-ratio:16/9}
+canvas{width:100%;height:100%;display:block;border:1px solid #23252e;box-shadow:0 0 60px #ff2e3a22}
+#start{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:radial-gradient(circle,#1a080c,#050507 70%)}
+#start h1{margin:0;font-size:clamp(30px,6vw,86px);font-style:italic;letter-spacing:.12em;text-shadow:0 0 30px #ff2e3a}
+#start p{margin:0;letter-spacing:.4em;color:#8a90a0}#start small{color:#8a90a0;letter-spacing:.15em}
+button{background:#12060a;color:#fff;border:1px solid #ff3b3b;padding:8px 18px;letter-spacing:.2em;font:inherit;cursor:pointer}
+button:hover{background:#ff3b3b;box-shadow:0 0 24px #ff3b3b}#go{font-size:22px;padding:14px 40px}
+#keys{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.k{border:1px solid #2b2e38;border-bottom-width:4px;border-radius:4px;padding:3px 9px;text-align:center;min-width:56px;font-size:10px;letter-spacing:.1em;background:#0d0e13;transition:transform .05s}
+.k b{display:block;font-size:15px;color:#fff}
+.k.on{transform:translateY(3px);border-color:#ff3b3b;box-shadow:0 0 14px #ff3b3b;background:#2a0d12}.k.on b{color:#ff9a2e}
+#bar{display:flex;flex-wrap:wrap;gap:14px;font-size:11px;letter-spacing:.1em;align-items:center;justify-content:center}
+input[type=range]{width:90px;accent-color:#ff3b3b;vertical-align:middle}
+#crash{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#050507cc;text-align:center;letter-spacing:.15em;line-height:1.7}#crash h2{margin:0;font-size:56px;color:#ff3b3b;font-style:italic;text-shadow:0 0 30px #ff2e3a}#start button{min-width:240px}
+#gl,#c{position:absolute;inset:0}#c{background:transparent}
